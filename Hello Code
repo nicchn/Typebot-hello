@@ -1,0 +1,150 @@
+#include <Servo.h>
+
+Servo servo01;
+Servo servo02;
+Servo servo03;
+
+int angle = 0;
+
+
+void setup() {
+  servo01.attach(3) ;
+  servo02.attach(5) ;
+  servo03.attach(6) ; 
+}
+
+void loop() {
+  
+   for(angle = 80; angle < 90; angle += 1)    
+  {                                  
+    servo01.write(angle);                
+    delay(15);                       
+  } 
+ 
+  delay(30);
+
+  
+
+   for(angle = 60; angle < 90; angle += 1)    
+  {                                  
+    servo03.write(angle);                 
+    delay(15);                       
+  }
+
+
+  delay(30);
+  
+  for(angle = 0; angle < 80; angle += 1)    
+  {                                  
+    servo02.write(angle);                 
+    delay(15);                       
+  } 
+  
+  for(angle = 80; angle>=1; angle-=5)    
+  {                                  
+    servo02.write(angle);                 
+    delay(15);                       
+  }
+
+  delay(100);
+
+//H
+
+
+
+  for(angle = 90; angle >=70; angle -= 5)    
+  {                                  
+    servo01.write(angle);                 
+    delay(15);                       
+  } 
+ 
+ 
+  for(angle = 90; angle < 110; angle += 1)    
+  {                                  
+    servo03.write(angle);                 
+    delay(15);                       
+  }
+
+  for(angle = 0; angle < 90; angle += 1)    
+  {                                  
+    servo02.write(angle);                 
+    delay(15);                       
+  } 
+  
+  for(angle = 90; angle>=1; angle-=5)    
+  {                                  
+    servo02.write(angle);                 
+    delay(15);                       
+  }
+  delay(100);
+//E
+
+
+
+  for(angle = 90; angle <107; angle += 1)   
+  {                                  
+    servo01.write(angle);                 
+    delay(15);                       
+  } 
+ 
+ 
+  for(angle = 90; angle < 100; angle += 1)   
+  {                                  
+    servo03.write(angle);                 
+    delay(15);                       
+  }
+
+  for(angle = 0; angle < 86; angle += 1)    
+  {                                  
+    servo02.write(angle);                 
+    delay(15);                       
+  } 
+  
+  for(angle = 86; angle>=30; angle-=5)    
+  {                                  
+    servo02.write(angle);                 
+    delay(15);                       
+  }
+   for(angle = 30; angle < 86; angle += 1)   
+  {                                  
+    servo02.write(angle);                 
+    delay(15);                       
+  } 
+  
+  for(angle = 86; angle>=1; angle-=5)   
+  {                                  
+    servo02.write(angle);                 
+    delay(15);                       
+  }
+  delay(100);
+//LL
+
+
+ for(angle = 90; angle <105; angle += 1)  
+  {                                  
+    servo01.write(angle);                 
+    delay(15);                       
+  } 
+ 
+ 
+  for(angle = 90; angle < 110; angle += 1)   
+  {                                  
+    servo03.write(angle);                
+    delay(15);                       
+  }
+
+  for(angle = 0; angle < 90; angle += 1)    
+  {                                  
+    servo02.write(angle);                 
+    delay(15);                       
+  } 
+  
+  for(angle = 90; angle>=1; angle-=5)
+  {                                  
+    servo02.write(angle);
+    delay(15);                       
+  }
+  delay(100);
+  //O
+
+}
