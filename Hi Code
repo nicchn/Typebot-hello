@@ -48,7 +48,7 @@ void loop() {
 
   delay(30);
 
-/h
+//h
 
   for(angle = 90; angle < 105; angle += 1) 
   {                                  
@@ -80,4 +80,4 @@ void loop() {
 
 }
 
-/i
+//i
